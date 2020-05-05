@@ -1,0 +1,17 @@
+# Copyright (C) 2016-2018 Betalo AB
+
+language: go
+
+notifications:
+  email: false
+
+go:
+    - 1.7.x
+    - 1.8.x
+    - 1.9.x
+    - 1.10.x
+    - master
+
+install: make deps
+
+script: make test
